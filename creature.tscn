@@ -1,0 +1,104 @@
+[gd_scene load_steps=3 format=3 uid="uid://crfhags8q0sir"]
+
+[ext_resource type="Script" path="res://ConstrainedSpine.gd" id="1_y2twy"]
+[ext_resource type="PackedScene" uid="uid://bqwwrfi57fbkk" path="res://segment.tscn" id="2_ipkdv"]
+
+[node name="Creature" type="Area2D"]
+
+[node name="ConstrainedSpine" type="Node2D" parent="."]
+script = ExtResource("1_y2twy")
+editable = false
+
+[node name="Segment1" parent="ConstrainedSpine" instance=ExtResource("2_ipkdv")]
+position = Vector2(324, 223)
+gizmo_extents = 2.03961
+
+[node name="RadiusMarker" parent="ConstrainedSpine/Segment1" index="0"]
+visible = false
+position = Vector2(2, 10)
+gizmo_extents = 1.0198
+
+[node name="Segment2" parent="ConstrainedSpine" instance=ExtResource("2_ipkdv")]
+position = Vector2(332.579, 228.138)
+gizmo_extents = 2.23607
+
+[node name="RadiusMarker" parent="ConstrainedSpine/Segment2" index="0"]
+visible = false
+position = Vector2(2, 11)
+gizmo_extents = 1.11803
+
+[node name="Segment3" parent="ConstrainedSpine" instance=ExtResource("2_ipkdv")]
+position = Vector2(340.898, 231.573)
+gizmo_extents = 2.66833
+
+[node name="RadiusMarker" parent="ConstrainedSpine/Segment3" index="0"]
+visible = false
+position = Vector2(3, 13)
+gizmo_extents = 1.33417
+
+[node name="Segment4" parent="ConstrainedSpine" instance=ExtResource("2_ipkdv")]
+position = Vector2(350.475, 234.449)
+gizmo_extents = 2.4331
+
+[node name="RadiusMarker" parent="ConstrainedSpine/Segment4" index="0"]
+visible = false
+position = Vector2(2, 12)
+gizmo_extents = 1.21655
+
+[node name="Segment5" parent="ConstrainedSpine" instance=ExtResource("2_ipkdv")]
+position = Vector2(358.287, 236.174)
+gizmo_extents = 2.00997
+
+[node name="RadiusMarker" parent="ConstrainedSpine/Segment5" index="0"]
+visible = false
+position = Vector2(1, 10)
+gizmo_extents = 1.00499
+
+[node name="Segment6" parent="ConstrainedSpine" instance=ExtResource("2_ipkdv")]
+position = Vector2(364.209, 237.136)
+gizmo_extents = 1.45602
+
+[node name="RadiusMarker" parent="ConstrainedSpine/Segment6" index="0"]
+visible = false
+position = Vector2(-2, 7)
+gizmo_extents = 0.728011
+
+[node name="Segment7" parent="ConstrainedSpine" instance=ExtResource("2_ipkdv")]
+position = Vector2(369.178, 237.693)
+gizmo_extents = 1.07703
+
+[node name="RadiusMarker" parent="ConstrainedSpine/Segment7" index="0"]
+visible = false
+position = Vector2(-2, 5)
+gizmo_extents = 0.538516
+
+[node name="Segment8" parent="ConstrainedSpine" instance=ExtResource("2_ipkdv")]
+position = Vector2(375.172, 237.965)
+gizmo_extents = 0.72111
+
+[node name="RadiusMarker" parent="ConstrainedSpine/Segment8" index="0"]
+visible = false
+position = Vector2(-2, 3)
+gizmo_extents = 0.360555
+
+[node name="Segment9" parent="ConstrainedSpine" instance=ExtResource("2_ipkdv")]
+position = Vector2(382.163, 237.599)
+gizmo_extents = 0.447214
+
+[node name="RadiusMarker" parent="ConstrainedSpine/Segment9" index="0"]
+visible = false
+position = Vector2(-1, 2)
+gizmo_extents = 0.223607
+
+[connection signal="child_entered_tree" from="ConstrainedSpine" to="ConstrainedSpine" method="_on_child_entered_tree"]
+[connection signal="child_exiting_tree" from="ConstrainedSpine" to="ConstrainedSpine" method="_on_child_exiting_tree"]
+
+[editable path="ConstrainedSpine/Segment1"]
+[editable path="ConstrainedSpine/Segment2"]
+[editable path="ConstrainedSpine/Segment3"]
+[editable path="ConstrainedSpine/Segment4"]
+[editable path="ConstrainedSpine/Segment5"]
+[editable path="ConstrainedSpine/Segment6"]
+[editable path="ConstrainedSpine/Segment7"]
+[editable path="ConstrainedSpine/Segment8"]
+[editable path="ConstrainedSpine/Segment9"]

@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://bqwwrfi57fbkk"]
+
+[ext_resource type="Script" path="res://segment.gd" id="1_xmn5g"]
+
+[node name="Segment" type="Marker2D"]
+position = Vector2(344, 357)
+gizmo_extents = 35.9611
+script = ExtResource("1_xmn5g")
+
+[node name="RadiusMarker" type="Marker2D" parent="."]
+position = Vector2(17, 179)
+gizmo_extents = 17.9805
